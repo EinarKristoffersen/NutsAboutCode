@@ -1,0 +1,30 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>NutsAboutCode</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/master.css" />
+    <script type="text/javascript" src="./js/master.js"></script>
+    <asp:ContentPlaceHolder id="Head" runat="server"></asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="header">
+        <div class="centered_70percent">
+            <ul class="float_left">
+                <li class="float_left"><img id="logo" src="./img/hazelnut-seed.png"/></li>
+                <li class="float_left"><input id="searchbox" type="text" placeholder="Search"/></li>
+            </ul>
+            <ul class="float_right">
+                <li class="float_right icons"><img src="./img/c_logo.png"/></li>
+                <li class="float_right icons"><img src="./img/js_logo.png"/></li>
+            </ul>
+        </div>
+    </div>
+    <div id="container" class="centered_70percent">
+       <asp:ContentPlaceHolder id="Container" runat="server"></asp:ContentPlaceHolder>
+    </div>
+</body>
+</html>

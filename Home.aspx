@@ -1,15 +1,16 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Home" %>
+﻿<%@ Page Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="Home.aspx.cs" Inherits="Home" %>
 
-<!DOCTYPE html>
+<asp:Content ID="HeadContent" ContentPlaceHolderID="Head" runat="server">
+    <link rel="stylesheet" type="text/css" href="./css/home.css" />
+    <script type="text/javascript" src="./js/home.js"></script>
+</asp:Content>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
-</head>
-<body>
-    <div id="header">
-        <label>NutsAboutCode</label>
-    </div>
-    <div id="container"></div>
-</body>
-</html>
+
+<asp:Content ID="PageContent" ContentPlaceHolderID="Container" runat="server">
+     <table cellspacing="0">
+        <tr><td>This is a test1</td><td>This is a test1</td><td>This is a test1</td></tr>
+        <tr><td>This is a test2</td><td>This is a test1</td><td>This is a test1</td></tr>
+        <tr><td>This is a test3</td><td>This is a test1</td><td>This is a test1</td></tr>
+        <tr><td>This is a test4</td><td>This is a test1</td><td>This is a test1</td></tr>
+    </table>
+</asp:Content>
