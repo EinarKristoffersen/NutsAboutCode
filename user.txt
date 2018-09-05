@@ -1,0 +1,7 @@
+
+
+SQL database
+
+servername: nutsaboutcode
+user: einar
+passwd: s1Kor@Nutsaboutcodepionen91

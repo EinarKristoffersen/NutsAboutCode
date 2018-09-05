@@ -3,12 +3,12 @@
 };
 
 var init = function () {
+    
     var tdElements = document.getElementsByTagName("td");
     for (var i = 0; i < tdElements.length; i++) {
-
         var clickHandler = function(td) {
             return function () {
-                window.location = "CodeSnippet.aspx";
+                window.location.href = "CodeSnippet.aspx?id=" +td.id;
             };
         };
 
